@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Position</title>
+    <!-- absolute 포지션 : relative에 상대적으로 포지션을 잡는것
+    relative포지션이 없을 경우, absolute는 문서의 본문 body에 맞춰 포지션을 잡음 -->
+  </head>
+  <style>
+    body,html{
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      /* 위의 3가지 설정하는 이유는 브라우저가 갖고있는 디폴트 값을 상쇄시키기 위함 */
+    }
+    body{
+      height: 400%;
+      background-color: red;
+    }
+    /* Position fixed
+      #boxOne{
+      height: 300px;
+      width: 300px;
+      background-color: yellow;
+      position: static;
+    }
+    #boxTwo{
+      height: 300px;
+      width: 300px;
+      background-color: green;
+      position: fixed;
+      top: 10px;
+      left: 100px;
+      bottom: 10px;
+    } */
+
+    .abs-box{
+      width: 400px;
+      height: 400px;
+      background-color: yellow;
+      position: relative;
+    }
+    .abs-child{
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      position: absolute;
+      right: 10px;
+      top:10px;
+      /* 포지션absolute가 설정되면 htmltkddptj 해당 element와 관계가 있는
+      (relative-부모박스)element를 살펴보고 이에 상응해서 포지션이 결정
+      근데 이 경우 부모박스가 상응하는 관계가 없어서 우리가 설정한대로 그냥 움직인거임 */
+      /* 부모박스에 position:relative;를 주면 그에맞게 포지션이 잡힘 */
+    }
+
+  </style>
+  <body>
+<div class="abs-box">
+  <div class="abs-child"></div>
+</div>
+
+    <!-- Position fixed
+    <div id="boxOne">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+      <div class="box-child"></div>
+    </div> -->
+  </body>
+</html>

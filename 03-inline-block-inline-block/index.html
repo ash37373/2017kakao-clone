@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inline Emample</title>
+    <style>
+      .box{
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- 블록은 element가 크기와 상관없이 그 옆에 다른 element가 위치하는 것을 허용하지 않는 것. -->
+    <!-- display: inline-block; 를 해주면 인라인블록으로 변함 -->
+    <!-- 블록은 그 옆에 아무것도 붙지 않는 것이고, 인라인-블록은 서로서로 붙는것이다.
+    인라인은 무엇일까? -->
+    <!-- 인라인은 박스의 모든 property 설정값을 지운다.
+    div가 아닌 span에서 내가 작성한 폭,높이 만큼의 스타일만 적용됨 -->
+    <!-- 인라인이란 텍스트이다. 텍스트는 폭도 높이도 없다.  -->
+  </body>
+</html>

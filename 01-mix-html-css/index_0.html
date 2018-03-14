@@ -1,0 +1,46 @@
+
+<!-- HTMl 형태
+<name attribute="value">Content</name>
+<human gender="male">Hubman</human>
+<dog breed="german-shepard">Dog</dog>
+<인간 성별="남성">인간</인간> -->
+<!-- <title>This is the title of the document</title> -->
+<!-- <a href="http://www.google.co.kr" target="_blank">Go to google</a> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="autor" content="Hwani">
+    <meta name="description" content="Welcome to my Kakao Clone">
+    <title>This is my Title</title>
+    <!-- 헤드는 유저에게 보이지 않는다.
+    헤드는 브라우저에게 너의 웹사이트에 관한 필요한 정보를 제공할 뿐 -->
+  </head>
+  <body>
+    <!-- body는 사람들이 읽는 컨텐츠 -->
+    <h1>This is my Big TItle</h1>
+    <h6>This is my small TItle</h6>
+
+    <!-- sementic 태그는 제목, 문단, 네비게이션(header,article,section 처럼)등등 뭔가 뜻이 있는 태크
+    non-semantic 태그는 아무 지칭하는 바가 없는, 의미없는 태그(div, span 같은) -->
+
+
+    <!-- 하단에  헤더가 두개 있다. 이래서 이름을 짓는것이 중요하다.
+    방법은 2가지. ID, Class
+    각 element마다 id는 한개만 갖을 수 있다. 마치 여권번호같이. id는 고유하기때문.
+    class는 반복될 수 있다 이름처럼. 실제로 많은 성환이 있지.
+    class로 두개 모두 푸른 색을 가지지만, 크기를 다르게 할 수 있다 id로 -->
+    <section>
+      <header id="headerNumberOne" class="defaultHeader">
+        <h1>Title of a section</h1>
+      </header>
+    </section>
+
+    <div id="differentHeader" class="defaultHeader">
+      <header>
+        Title of the unkown container
+      </header>
+    </div>
+
+  </body>
+</html>
